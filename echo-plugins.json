@@ -6,8 +6,15 @@
       "id": "auto-vip-claim",
       "name": "自动领取VIP",
       "path": "auto-vip-claim",
-      "homepage": "https://github.com/Jursin/auto-vip-claim/tree/main/auto-vip-claim",
-      "tags": []
+      "homepage": "https://github.com/Jursin/Unknown-EchoMusic-Plugins/tree/main/auto-vip-claim",
+      "tags": ["VIP"]
+    },
+    {
+      "id": "simple-theme",
+      "name": "经典主题",
+      "path": "simple-theme",
+      "homepage": "https://github.com/Jursin/Unknown-EchoMusic-Plugins/tree/main/simple-theme",
+      "tags": ["主题"]
     }
   ]
 }

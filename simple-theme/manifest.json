@@ -1,0 +1,17 @@
+{
+  "id": "simple-theme",
+  "name": "经典主题",
+  "version": "1.0.0",
+  "description": "还原改版前的内置主题色，包括默认蓝、赤焰红、玫瑰粉、暮色紫、靛青、天蓝、薄荷、森绿、琥珀、落日橙。",
+  "author": "Unknown",
+  "main": "index.js",
+  "capabilities": {
+    "theme": true
+  },
+  "requires": {
+    "echoMusicVersion": ">=2.3.2-beta.7"
+  },
+  "tags": [
+    "主题"
+  ]
+}
