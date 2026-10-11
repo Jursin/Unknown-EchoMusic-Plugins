@@ -1,0 +1,147 @@
+.sidebar-shortcuts:not(.is-collapsed) {
+  position: relative;
+  padding: 0 16px;
+}
+
+.sidebar-shortcuts:not(.is-collapsed)::before,
+.sidebar-menu-groups nav[aria-label="我的乐库"]::before {
+  display: block;
+  margin: 0 0 8px;
+  padding: 0 14px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  color: var(--color-text-secondary);
+  user-select: none;
+}
+
+.sidebar-shortcuts:not(.is-collapsed)::before {
+  content: "发现音乐";
+}
+
+.sidebar-menu-groups nav[aria-label="我的乐库"]::before {
+  content: "我的乐库";
+}
+
+.sidebar-shortcuts:not(.is-collapsed) .shortcut-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sidebar-shortcuts:not(.is-collapsed) .shortcut-card {
+  display: block;
+  height: auto;
+  border-radius: var(--radius-item);
+  background-color: transparent;
+  transition: background-color 0.15s ease;
+}
+
+.sidebar-shortcuts:not(.is-collapsed) .shortcut-card:hover,
+.sidebar-shortcuts:not(.is-collapsed) .shortcut-card:focus-within {
+  background-color: var(
+    --row-hover-bg,
+    color-mix(in srgb, var(--color-text-main) 8%, transparent)
+  );
+}
+
+.sidebar-shortcuts:not(.is-collapsed)
+  .shortcut-card:has(.shortcut-activate[aria-current="page"]) {
+  background-color: transparent;
+}
+
+.sidebar-shortcuts:not(.is-collapsed) .shortcut-activate {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  height: auto;
+  min-height: 36px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: padding 0.15s ease;
+}
+
+.sidebar-shortcuts:not(.is-collapsed) .shortcut-card:hover .shortcut-activate,
+.sidebar-shortcuts:not(.is-collapsed)
+  .shortcut-card:focus-within
+  .shortcut-activate {
+  padding-right: 36px;
+}
+
+.sidebar-shortcuts:not(.is-collapsed) .shortcut-icon {
+  flex: none;
+  opacity: 1 !important;
+}
+
+.sidebar-shortcuts:not(.is-collapsed) svg.shortcut-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--icon-main);
+  transition: color 0.15s ease;
+}
+
+.sidebar-shortcuts:not(.is-collapsed) .shortcut-card:hover svg.shortcut-icon,
+.sidebar-shortcuts:not(.is-collapsed)
+  .shortcut-card:focus-within
+  svg.shortcut-icon {
+  color: var(--color-text-main);
+}
+
+.sidebar-shortcuts:not(.is-collapsed)
+  .shortcut-activate[aria-current="page"]
+  svg.shortcut-icon {
+  color: var(--color-primary-text);
+}
+
+.sidebar-shortcuts:not(.is-collapsed) .shortcut-label {
+  flex: 1;
+  min-width: 0;
+  opacity: 1;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-shortcuts:not(.is-collapsed)
+  .shortcut-activate[aria-current="page"]
+  .shortcut-label {
+  color: var(--color-primary-text);
+  font-weight: 600;
+}
+
+.sidebar-shortcuts:not(.is-collapsed) .shortcut-remove {
+  top: 50%;
+  right: 6px;
+  transform: translateY(-50%);
+}
+
+.sidebar-shortcuts:not(.is-collapsed) .shortcut-card.sortable-ghost {
+  opacity: 0;
+}
+
+.sidebar-shortcuts:not(.is-collapsed) .shortcut-add,
+.sidebar-shortcuts:not(.is-collapsed) .shortcut-add.is-wide {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-control);
+  z-index: 1;
+}
+
+.sidebar-shortcuts:not(.is-collapsed) .shortcut-add:hover {
+  color: var(--color-text-main);
+}
+
+.sidebar-shortcuts:not(.is-collapsed) .shortcut-add svg {
+  width: 12px;
+  height: 12px;
+}

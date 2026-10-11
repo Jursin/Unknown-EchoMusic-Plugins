@@ -15,6 +15,13 @@
       "path": "simple-theme",
       "homepage": "https://github.com/Jursin/Unknown-EchoMusic-Plugins/tree/main/simple-theme",
       "tags": ["主题"]
+    },
+    {
+      "id": "classic-sidebar",
+      "name": "经典侧边栏",
+      "path": "classic-sidebar",
+      "homepage": "https://github.com/Jursin/Unknown-EchoMusic-Plugins/tree/main/classic-sidebar",
+      "tags": ["界面"]
     }
   ]
 }

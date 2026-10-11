@@ -1,0 +1,15 @@
+{
+  "id": "classic-sidebar",
+  "name": "经典侧边栏",
+  "version": "1.0.0",
+  "description": "将侧边栏「为你推荐」「探索发现」等快捷卡片还原为改版前的纵向列表布局。",
+  "author": "Unknown",
+  "main": "index.js",
+  "style": "style.css",
+  "requires": {
+    "echoMusicVersion": ">=2.3.2-beta.7"
+  },
+  "tags": [
+    "界面"
+  ]
+}
